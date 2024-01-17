@@ -1,0 +1,1 @@
+SELECT busNumber, route, speed, occupancyRate, engineTemperature,brakeHealth FROM '/awsiotbook/publicTransport/busData'

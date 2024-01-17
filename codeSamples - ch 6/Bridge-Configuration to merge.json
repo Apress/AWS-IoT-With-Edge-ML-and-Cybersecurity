@@ -1,0 +1,9 @@
+{
+	"mqttTopicMapping": {
+		"AWSIoTBookIotCoreMapping": {
+			"topic": "devices/+/data/value",
+			"source": "LocalMqtt",
+			"target": "IotCore"
+		}
+	}
+}

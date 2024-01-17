@@ -1,0 +1,7 @@
+{
+  "cloudUpload": {
+    "mode": "CONTINUOUS", 
+    "logGroup": "GreengrassCoreLogGroup",
+    "logStreamPrefix": "GGv2LogStreamPrefix"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "deviceGroups": {
+    "formatVersion": "2021-03-05",
+    "definitions": {
+      "MyDeviceGroup": {
+        "selectionRule": "thingName: Thermostat* OR thingName: Doorlock*",
+        "policyName": "EdgeClientDevicePolicy"
+      }
+    },
+    "policies": {
+      "EdgeClientDevicePolicy": {
+        "AllowAll": {
+          "statementDescription": "Allow client devices.",
+          "operations": [
+            "mqtt:connect",
+            "mqtt:publish",
+            "mqtt:subscribe"
+          ],
+          "resources": [
+            "*"
+          ]
+        }
+      }
+    }
+  }
+}
